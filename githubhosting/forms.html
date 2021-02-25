@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="forms.js"></script>
+</head>
+<body>
+<form>
+    <label>Preferred email address:
+        <input type="email" id="email_addr" name="email1" value="abc@gmail.com" required>
+    
+    </label>
+    <label>Repeat email address:
+        <input type="email" id="email_repeat" 
+        name="email2" required onchange="check()" value="repeat the past">
+    </label>
+    <input type="submit" value="Confirm Emails"onclick="return check();">
+    <fieldset>
+
+    <label for="yesNick">Nickname?</label>
+    <input id="yesNick" name="yesNick" type="checkbox" value="yes" onchange="nicknameFunction()"/></br>
+   
+<div id="nick">
+    <label for="nickname">Nickname:</label>
+    <input type="text" name="nickname" id="nickname"><br>
+  
+</div>
+</fieldset></form>
+</body>
+</html>
